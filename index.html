@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة تحكم Discover Islam</title>
+<style>
+  :root{
+    --teal:#0b3d3f; --teal2:#082f31; --gold:#d9a441; --gold2:#f5c86b;
+    --bg:#0a2b2d; --card:#103a3c; --card2:#0d3234; --text:#f2ede2; --muted:#a8c0bd;
+    --ok:#3ecf7a; --warn:#f5c86b; --bad:#ff7a7a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .hero{background:linear-gradient(135deg,var(--teal) 0%,var(--teal2) 60%,#061e1f 100%);padding:38px 20px 30px;text-align:center;border-bottom:3px solid var(--gold);position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(217,164,65,.18),transparent 60%)}
+  .hero h1{font-size:26px;font-weight:800;position:relative}
+  .hero h1 .g{color:var(--gold2)}
+  .hero p{color:var(--muted);font-size:13px;margin-top:6px;position:relative}
+  .live{display:inline-flex;align-items:center;gap:7px;background:rgba(62,207,122,.12);border:1px solid rgba(62,207,122,.4);color:var(--ok);font-size:12px;font-weight:700;border-radius:20px;padding:4px 14px;margin-top:12px;position:relative}
+  .live i{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:blink 1.6s infinite}
+  @keyframes blink{50%{opacity:.35}}
+  .wrap{max-width:960px;margin:0 auto;padding:20px 16px 40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--card);border:1px solid rgba(217,164,65,.22);border-radius:16px;padding:18px}
+  .card h2{font-size:15px;color:var(--gold2);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .card h2::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--gold);flex-shrink:0}
+  .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(168,192,189,.18);font-size:14px;gap:10px}
+  .row:last-child{border-bottom:none}
+  .row .k{color:var(--muted)}
+  .row .v{font-weight:700;text-align:left}
+  .ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+  .bignum{font-size:30px;font-weight:800;color:var(--gold2)}
+  .stats4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 6px}
+  .stat{background:var(--card2);border-radius:12px;padding:12px 6px;text-align:center}
+  .stat b{display:block;font-size:22px;color:var(--gold2)}
+  .stat span{font-size:11px;color:var(--muted)}
+  .tag{display:inline-block;font-size:11px;font-weight:800;border-radius:20px;padding:3px 12px}
+  .tag.ok{background:rgba(62,207,122,.14);color:var(--ok)}
+  .tag.wait{background:rgba(245,200,107,.14);color:var(--warn)}
+  .tag.stop{background:rgba(255,122,122,.12);color:var(--bad)}
+  .bar{height:10px;background:var(--card2);border-radius:6px;overflow:hidden;margin:8px 0 4px}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:6px}
+  .note{font-size:12px;color:var(--muted)}
+  .check{list-style:none}
+  .check li{padding:7px 0;border-bottom:1px dashed rgba(168,192,189,.18);font-size:14px;display:flex;gap:9px;align-items:flex-start}
+  .check li:last-child{border:none}
+  .ck{color:var(--ok);font-weight:800}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:26px 16px}
+  footer a{color:var(--gold2)}
+  @media(max-width:560px){.stats4{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>لوحة تحكم <span class="g">Discover Islam</span></h1>
+  <p>نظرة شاملة على الحساب والمحتوى والنشر — آخر تحديث: الاثنين 28 شتنبر 2026، 22:45</p>
+  <span class="live"><i></i> الحساب نشط</span>
+</div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="card">
+      <h2>حساب إنستغرام</h2>
+      <div class="row"><span class="k">المعرّف</span><span class="v" dir="ltr">@disco.verislam</span></div>
+      <div class="stats4" style="margin-top:10px">
+        <div class="stat"><b>0</b><span>متابِع</span></div>
+        <div class="stat"><b>20</b><span>يتابع</span></div>
+        <div class="stat"><b>2</b><span>منشورات</span></div>
+        <div class="stat"><b>7</b><span>ستوري</span></div>
+      </div>
+      <div class="row"><span class="k">البايو</span><span class="v ok">✓ مضبوط</span></div>
+      <div class="row"><span class="k">رابط الموقع</span><span class="v ok">✓ مضبوط</span></div>
+      <div class="row"><span class="k">صورة البروفايل</span><span class="v ok">✓ مضبوطة</span></div>
+    </div>
+
+    <div class="card">
+      <h2>خط المحتوى</h2>
+      <div class="row"><span class="k">تم النشر</span><span class="v"><span class="tag ok">10 عناصر</span></span></div>
+      <div class="note" style="margin:4px 0 8px">ريل تعريفي + ستوري ترحيب + صورة ترحيب + 7 ستوري أسئلة شائعة</div>
+      <div class="row"><span class="k">الريل الفيروسي</span><span class="v"><span class="tag wait">جاهز للنشر</span></span></div>
+      <div class="note" style="margin:4px 0 8px">إنستغرام رفض الرفع مؤقتًا (كثرة المنشورات اليوم) — إعادة المحاولة صباح الثلاثاء</div>
+      <div class="row"><span class="k">ستوري الأسئلة الشائعة</span><span class="v">7 / 20</span></div>
+      <div class="bar"><i style="width:35%"></i></div>
+      <div class="note">13 متبقية — متوقفة مؤقتًا بطلبك</div>
+    </div>
+
+    <div class="card">
+      <h2>النشر اليومي</h2>
+      <div class="row"><span class="k">فيديوهات جاهزة</span><span class="v bignum">20</span></div>
+      <div class="row"><span class="k">الجدولة</span><span class="v">يوميًا 19:14</span></div>
+      <div class="row"><span class="k">التشغيل القادم</span><span class="v">الثلاثاء 29 شتنبر 19:14</span></div>
+      <div class="row"><span class="k">آخر تشغيل</span><span class="v bad">فشل — خطأ إنستغرام 500</span></div>
+      <div class="note" style="margin-top:8px">أول فيديو في السلسلة: «What do Muslims believe about Jesus؟» — أقوى هوك للجمهور الأمريكي والأوروبي</div>
+    </div>
+
+    <div class="card">
+      <h2>الموقع — إحصائيات 28 شتنبر</h2>
+      <div class="stats4">
+        <div class="stat"><b>405</b><span>زيارة</span></div>
+        <div class="stat"><b>1,010</b><span>مشاهدة صفحة</span></div>
+        <div class="stat"><b>72%</b><span>من أمريكا</span></div>
+        <div class="stat"><b>~2</b><span>دقائق متوسط</span></div>
+      </div>
+      <div class="row"><span class="k">الدليل</span><span class="v" dir="ltr">97 دليل</span></div>
+      <div class="row"><span class="k">صفحات جديدة</span><span class="v">مواقيت الصلاة + القبلة + مصادر المسلم الجديد</span></div>
+      <div class="note" style="margin-top:8px"><a href="https://bofrahi12.github.io/islamic-civilization-explorer/" style="color:var(--gold2)">bofrahi12.github.io/islamic-civilization-explorer</a></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h2>خطوات معلقة</h2>
+    <ul class="check">
+      <li><span class="ck">◷</span><span><b>إعادة نشر الريل الفيروسي</b> — صباح الثلاثاء بعد ما يرتاح حد إنستغرام</span></li>
+      <li><span class="ck">◷</span><span><b>تفعيل استمارة الموقع</b> — كاين إيميل تفعيل فـ Gmail ديالك، ضغط عليه مرة وحدة</span></li>
+      <li><span class="ck">◷</span><span><b>مراجعة التحليلات الأسبوعية</b> — الأحد 4 أكتوبر 10:14</span></li>
+      <li><span class="ck">◷</span><span><b>13 ستوري متبقية</b> — محفوظة وجاهزة، قوليا غير وقتش نكملو</span></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  لوحة تحكم داخلية لمشروع Discover Islam — تُحدَّث عند الطلب<br>
+  <span class="note">الأرقام من فحص مباشر بتاريخ 28 شتنبر 2026</span>
+</footer>
+</body>
+</html>
